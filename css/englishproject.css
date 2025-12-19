@@ -1,0 +1,330 @@
+body{
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    color: #0f172a;
+}
+
+.top-bar {
+  background: 2563eb;
+}
+
+header {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+nav {
+  background: transparent;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.4rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px; 
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus {
+ background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: transparent;
+  border-radius: 16px;
+}
+main p,
+main li {
+  max-width: 65ch;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #5298f3;
+  color: #2563eb;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 0rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+section {
+  background-color: rgba(248, 250, 252, 0.05);
+  padding: 2.5rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.site-wrapper {
+  background: linear-gradient(#2563eb 0%, #bcdaff 90%);
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+/*<--Introduction Images Start-->*/
+.text-bg-1 {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.text-bg-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/sun_over_field.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.text-bg-1 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-credit {
+  position: absolute !important; 
+  bottom: 10px;
+  right: 16px;
+  font-size: 0.7rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.text-bg-2 {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.text-bg-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/Family.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.text-bg-2 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.text-bg-3 {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.text-bg-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/Old_woman.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.text-bg-3 > * {
+  position: relative;
+  z-index: 1;
+}
+/*<--Introduction Images End-->*/
+
+/*<--History-->*/
+
+.history-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  padding: 1rem 1rem;
+  width: relative;
+  padding: 0 2rem;
+}
+
+.history-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 3rem;
+  min-height: 320px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.history-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.history-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.history-photo-1::before {
+  background-image: url("../assets/images/industrialhousing.jpg");
+}
+
+.history-photo-2::before {
+  background-image: url("../assets/images/newdealhouses.png");
+}
+
+.history-photo-3::before {
+  background-image: url("../assets/images/Reagan.jpg");
+}
+
+.history-photo-4::before {
+  background-image: url("../assets/images/housepricesdrop.png");
+}
+
+
+.history-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
+}
+
+.history-card:hover::before {
+  opacity: 0.35;
+}
+
+.history-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  color: #1e3a8a;
+}
+
+.history-card p {
+  line-height: 1.7;
+  color: #334155;
+}
+
+/*History Pictures Here*/
+
+.history-photo-1 {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.history-photo-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/industrialhousing.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.history-photo-1 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.text-bg-2 {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.text-bg-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/Family.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.text-bg-2 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.text-bg-3 {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.text-bg-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/Old_woman.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.text-bg-3 > * {
+  position: relative;
+  z-index: 1;
+}
