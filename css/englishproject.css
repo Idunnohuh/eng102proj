@@ -257,74 +257,21 @@ section {
 
 /*History Pictures Here*/
 
-.history-photo-1 {
-  position: relative;
-  padding: 3rem 2rem;
-  border-radius: 16px;
+.history-graph-wrapper-1 {
+  margin-top: 1.5rem;
+  border-radius: 14px;
   overflow: hidden;
-  background-color: rgba(248, 250, 252, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.25;
 }
 
-.history-photo-1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../assets/images/industrialhousing.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: 0;
+.history-graph-wrapper-1 img {
+  width: 100%;
+  display: block;
 }
 
-.history-photo-1 > * {
-  position: relative;
-  z-index: 1;
+.history-card:hover .history-graph-wrapper-1 {
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+  opacity: 1;
 }
 
-.text-bg-2 {
-  position: relative;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: rgba(248, 250, 252, 0.05);
-}
-
-.text-bg-2::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../assets/images/Family.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-.text-bg-2 > * {
-  position: relative;
-  z-index: 1;
-}
-
-.text-bg-3 {
-  position: relative;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: rgba(248, 250, 252, 0.05);
-}
-
-.text-bg-3::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../assets/images/Old_woman.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-.text-bg-3 > * {
-  position: relative;
-  z-index: 1;
-}
