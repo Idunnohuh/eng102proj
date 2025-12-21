@@ -218,21 +218,7 @@ section {
   z-index: 1;
 }
 
-.history-photo-1::before {
-  background-image: url("../assets/images/industrialhousing.jpg");
-}
 
-.history-photo-2::before {
-  background-image: url("../assets/images/newdealhouses.png");
-}
-
-.history-photo-3::before {
-  background-image: url("../assets/images/Reagan.jpg");
-}
-
-.history-photo-4::before {
-  background-image: url("../assets/images/housepricesdrop.png");
-}
 
 
 .history-card:hover {
@@ -273,5 +259,97 @@ section {
 .history-card:hover .history-graph-wrapper-1 {
   box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
   opacity: 1;
+}
+
+.repercussion-graph-wrapper-1 {
+  margin-top: 1.5rem;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.25;
+}
+
+.repercussion-graph-wrapper-1 img {
+  width: 100%;
+  display: block;
+}
+
+.history-card:hover .repercussion-graph-wrapper-1 {
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+  opacity: 1;
+}
+
+
+/*Photos*/
+
+
+.history-photo-1::before {
+  background-image: url("../assets/images/industrialhousing.jpg");
+}
+
+.history-photo-2::before {
+  background-image: url("../assets/images/newdealhouses.png");
+}
+
+.history-photo-3::before {
+  background-image: url("../assets/images/Reagan.jpg");
+}
+
+.history-photo-4::before {
+  background-image: url("../assets/images/housepricesdrop.png");
+}
+
+/*Extent*/
+
+.extent-photo-1::before {
+  background-image: url("../assets/images/People.jpg");
+}
+
+.extent-photo-2::before {
+  background-image: url("../assets/images/worker.jpg");
+}
+
+.extent-photo-3::before {
+  background-image: url("../assets/images/elderly.jpg");
+}
+
+.extent-photo-4::before {
+  background-image: url("../assets/images/Homeless_Man.jpg");
+}
+
+/*Repercussions*/
+
+.repercussions-photo-1::before {
+  background-image: url("../assets/images/hopital.jpg");
+}
+
+.repercussions-photo-2::before {
+  background-image: url("../assets/images/centralpark.jpg");
+}
+
+.repercussions-photo-3::before {
+  background-image: url("../assets/images/wallst.jpg");
+}
+
+.repercussions-photo-4::before {
+  background-image: url("../assets/images/money.jpg");
+}
+
+/*Solutions*/
+
+.sl-photo-1::before {
+  background-image: url("../assets/images/flagonhouse.jpg");
+}
+
+.sl-photo-2::before {
+  background-image: url("../assets/images/shakehand.jpg");
+}
+
+.sl-photo-3::before {
+  background-image: url("../assets/images/capital.jpg");
+}
+
+.sl-photo-4::before {
+  background-image: url("../assets/images/volunteer.jpg");
 }
 
